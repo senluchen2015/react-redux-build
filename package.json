@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --config webpack.production.config.js --progress --profile --colors",
     "start": "npm-run-all -p test:watch start-dev",
-    "start-dev": "sleep 3 && webpack-dev-server --progress --colors",
+    "start-dev": "webpack-dev-server --progress --colors",
     "test": "mocha tests/test-setup.js \"./**/*.spec.js\" --reporter progress",
     "test:watch": "npm run test -- --watch",
     "lint": "eslint --ext js --ext jsx src || exit 0"
